@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "context-diet"
+version = "0.1.0"
+description = "Find the bloat in CLAUDE.md, AGENTS.md, GEMINI.md and other AI instruction files that you pay for on every single message."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Mohammed Al-Saray"}]
+keywords = ["claude-md", "agents-md", "gemini-md", "context-window", "tokens", "claude-code", "codex", "gemini-cli", "cursor", "lint"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/mohammed2345353/context-diet"
+Issues = "https://github.com/mohammed2345353/context-diet/issues"
+
+[project.scripts]
+context-diet = "context_diet.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
