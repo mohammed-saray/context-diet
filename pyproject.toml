@@ -19,8 +19,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mohammed2345353/context-diet"
-Issues = "https://github.com/mohammed2345353/context-diet/issues"
+Homepage = "https://github.com/mohammed-saray/context-diet"
+Issues = "https://github.com/mohammed-saray/context-diet/issues"
 
 [project.scripts]
 context-diet = "context_diet.cli:main"

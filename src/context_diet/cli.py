@@ -78,7 +78,7 @@ def main(argv=None) -> int:
         if mcp:
             n = sum(len(v) for v in mcp.values())
             print(f"\nMCP servers configured: {n}. Their tool definitions are also sent with every message —"
-                  " measure them with `mcp-token-audit` (github.com/mohammed2345353/mcp-token-audit).")
+                  " measure them with `mcp-token-audit` (github.com/mohammed-saray/mcp-token-audit).")
             for src, names in mcp.items():
                 print(f"  {_rel(Path(src), root)}: {', '.join(names[:12])}{' …' if len(names) > 12 else ''}")
     if a.fail_over is not None and total > a.fail_over:
